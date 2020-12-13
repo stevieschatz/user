@@ -15,9 +15,9 @@ func main() {
 	// Routes
 	e.POST("/users", CreateUser)
 
-	e.GET("/users/:id", GetUser)
-	e.PUT("/users/:id", UpdateUser)
-	e.DELETE("/users/:id", DeleteUser)
+	// e.GET("/users/:id", GetUser)
+	// e.PUT("/users/:id", UpdateUser)
+	// e.DELETE("/users/:id", DeleteUser)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":1323"))

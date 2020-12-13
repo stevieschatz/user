@@ -1,8 +1,10 @@
 package main
 
+import "gorm.io/gorm"
+
 type (
-	user struct {
-		ID   int    `json:"id"`
+	User struct {
+		gorm.Model
 		Name string `json:"name"`
 	}
 )
